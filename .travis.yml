@@ -4,7 +4,8 @@ node_js:
 cache:
   directories:
     - "node_modules"
-before_install:
-  - "node ./app/server.js"
+before_script:
+  - npm install
 script:
+    - node ./app/server.js
     - "npm test"
